@@ -640,8 +640,8 @@
                 <b>AP. PROGRAMÁTICA:</b> {{ vale.catProgra }}
               </div>
               <div class="mb-1">
-                <b>FECHA:</b> <span *ngIf="vale.autorizacion">{{ vale.autorizacion.fecha | date : 'dd/MM/yyyy' }}</span>
-                <span *ngIf="!vale.autorizacion">{{ vale.fecha | date : 'dd/MM/yyyy' }}</span>
+                <b>FECHA:</b> <span *ngIf="vale.autorizacion">{{ vale.autorizacion.fecha | date : 'dd/MM/yyyy' : "UTC" }}</span>
+                <span *ngIf="!vale.autorizacion">{{ vale.fecha | date : 'dd/MM/yyyy' : "UTC" }}</span>
               </div>
               <div>
                 <b>N° DE VALE:</b> {{ vale.numeroVale }}
@@ -792,8 +792,8 @@
                 <b>LUGAR:</b> {{ vale.autorizacion ? vale.autorizacion.destino : vale.destino | titlecase }}
               </div>
               <div class="mb-1">
-                <b>FECHA:</b> <span *ngIf="vale.autorizacion">{{ vale.autorizacion.fecha | date : 'dd/MM/yyyy' }}</span>
-                <span *ngIf="!vale.autorizacion">{{ vale.fecha | date : 'dd/MM/yyyy' }}</span>
+                <b>FECHA:</b> <span *ngIf="vale.autorizacion">{{ vale.autorizacion.fecha | date : 'dd/MM/yyyy' : "UTC" }}</span>
+                <span *ngIf="!vale.autorizacion">{{ vale.fecha | date : 'dd/MM/yyyy' : "UTC" }}</span>
               </div>
             </div>
 
