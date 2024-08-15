@@ -224,7 +224,7 @@
                 <b>AP. PROGRAMÁTICA:</b> {{ vale.catProgra }} - {{ vale.progra }}
               </div>
               <div class="mb-1">
-                <b>FECHA:</b> {{ vale.createdAt | date : 'fullDate' : "UTC" }}
+                <b>FECHA:</b> {{ vale.autorizacion?.fechaSalida | date : 'fullDate' : "UTC" }}
               </div>
               <div>
                 <b>N° DE AUTORIZACIÓN:</b> AF-{{ vale.autorizacion?.numeroAutorizacion }}
@@ -355,7 +355,7 @@
                 <b>AP. PROGRAMÁTICA:</b> {{ vale.catProgra }}
               </div>
               <div class="mb-1">
-                <b>FECHA:</b> {{ vale.createdAt | date : 'fullDate' : "UTC" }}
+                <b>FECHA:</b> {{ vale.autorizacion?.fechaSalida | date : 'fullDate' : "UTC" }}
               </div>
               <div>
                 <b>N° DE AUTORIZACIÓN:</b> AF-{{ vale.autorizacion?.numeroAutorizacion }}
@@ -486,7 +486,7 @@
                 <b>AP. PROGRAMÁTICA:</b> {{ vale.catProgra }}
               </div>
               <div class="mb-1">
-                <b>FECHA:</b> {{ vale.createdAt | date : 'fullDate' : "UTC" }}
+                <b>FECHA:</b> {{ vale.autorizacion?.fechaSalida | date : 'fullDate' : "UTC" }}
               </div>
               <div>
                 <b>N° DE AUTORIZACIÓN:</b> AF-{{ vale.autorizacion?.numeroAutorizacion }}
